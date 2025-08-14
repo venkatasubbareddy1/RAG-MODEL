@@ -44,8 +44,8 @@ with st.sidebar:
           loader = PyPDFLoader(file.name)
           docs.extend(loader.load())
 
-       text_splitter= RecursiveCharacterTextSplitter(Chunk_size=1000, chunk_overlap=200)
-       final_documents = text_splitter.split_documents(docs)
+         text_splitter= RecursiveCharacterTextSplitter(Chunk_size=1000, chunk_overlap=200)
+         final_documents = text_splitter.split_documents(docs)
 
 #us ea pre-trained model from Hugging Face for embeddings
       embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6_v2")
