@@ -89,7 +89,7 @@ if prompt_input := st.chat_input("Ask a question about your documents..."):
     with st.spinner("Thinking..."):
       document_chain = create_stuff_documents_chain(llm,prompt)
       retriver = st.session_state.vector.as_retriver()
-      retriver_chain = create_retrival_chain(retriver, document_chain0
+      retriver_chain = create_retrival_chain(retriver, document_chain)
 
       start = time.process.time()
       response = retrival_chain.involve({"input":prompt_input})
