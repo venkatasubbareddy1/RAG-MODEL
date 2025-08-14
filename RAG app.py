@@ -9,7 +9,7 @@ from langchain.chains import create_retrieval_chain
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_huggingface import HuggingFaceEmbeddings
-import timme
+import time
 
 #load enviroment variables
 load_dotenv()
@@ -58,7 +58,7 @@ with st.sidebar:
 st.header("Chat with Your Documents")
 
 #intialize the language model
-llm = ChatGroq(groq_api_key=groq_api_key, model_name=Llama3-8b-8192")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 
 #Create the prompt template
 prompt = ChatPromptTemplate.from_template(
