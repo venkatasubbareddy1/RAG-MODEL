@@ -81,7 +81,7 @@ with st.sidebar:
 st.header("3. Ask Questions About Your Documents")
 
 # Initialize the language model
-llm = ChatGroq(groq_api_key=GROQ_API_KEY, model_name="Llama3-8b-8192")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 
 # Define the prompt template
 prompt = ChatPromptTemplate.from_template(
