@@ -2,7 +2,7 @@ import streamlit as st
 from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
-from langchain.text_splitter import RecursiveCharacterTextsplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPrompTemplate
 from langchain.chains import create_retrieval_chain
