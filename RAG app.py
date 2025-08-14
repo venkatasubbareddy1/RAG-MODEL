@@ -74,7 +74,7 @@ prompt = ChatPromptTemplate.from_template(
 
 #Dispay previoys chat message 
 for message in st.session_state.chat_history:
-  with st.chat_message(message["role']):
+  with st.chat_message(message["role"]):
       st.markdown(message["content"])
 
 #get user input
