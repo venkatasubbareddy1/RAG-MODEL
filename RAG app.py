@@ -80,8 +80,8 @@ for message in st.session_state.chat_history:
 #get user input
 if prompt_input := st.chat_input("Ask a question about your documents..."):
   if st.session_state.vector is not none:
-    with st.chat_message("user")
-        st.markdown(prompt_input)
+    with st.chat_message("user"):
+      st.markdown(prompt_input)
 
 
     st.session_state.chat_history.append({"role":"user","content":prompt_input})
