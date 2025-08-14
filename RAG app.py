@@ -99,7 +99,7 @@ if prompt_input := st.chat_input("Ask a question about your documents..."):
         st.markdown(response['answer'])
         st.info(f"Response time: {Response_time:.2f} seconds")
 
-      st.session_state.chat_history.append({"role":"assisatnt", "content":"response['answer']})
+      st.session_state.chat_history.append({"role":"assisatnt", "content": response['answer']})
                                             
 else:
   st.warning("Please process your document before asking questions,")      
